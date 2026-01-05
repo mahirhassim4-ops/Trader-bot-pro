@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mada-trading-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8239945370:AAHgBmLRMj2_t3Vq1Cwi-iMqvSxMSaKiGhk
+      - key: TRADING_MODE
+        value: TEST
